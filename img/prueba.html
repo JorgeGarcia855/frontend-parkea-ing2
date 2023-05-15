@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barra de navegación y secciones con Grid</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		/* Estilos para la barra de navegación */
+		nav {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		/* Estilos para las secciones */
+		.container {
+			display: grid;
+			grid-template-columns: 2fr 3fr;
+			grid-template-rows: 1fr 2fr;
+			grid-gap: 20px;
+			padding: 20px;
+		}
+
+		.left {
+			grid-row: 1 / 3;
+		}
+
+		/* Estilos para los botones */
+		.buttons {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-gap: 20px;
+			margin-top: 20px;
+		}
+
+		.buttons button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- Barra de navegación -->
+	<nav>
+		<a href="#">Inicio</a>
+		<a href="#">Acerca de</a>
+		<a href="#">Contacto</a>
+	</nav>
+
+	<!-- Secciones con Grid -->
+	<div class="container">
+		<div class="left">
+			<img src="https://via.placeholder.com/600x400" alt="Imagen 1">
+		</div>
+		<div class="right">
+			<img src="https://via.placeholder.com/900x600" alt="Imagen 2">
+		</div>
+		<div class="buttons">
+			<button>Botón 1</button>
+			<button>Botón 2</button>
+			<button>Botón 3</button>
+		</div>
+		<div class="buttons">
+			<button>Registrarse</button>
+			<button>Iniciar sesión</button>
+			<button>Redirigir a otra página</button>
+		</div>
+	</div>
+</body>
+</html>
